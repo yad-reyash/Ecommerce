@@ -10,8 +10,7 @@ This is an e-commerce web application built with React and Vite, featuring a mod
 
 ### Installation
 
-1. Clone the repository
-2. Install dependencies:
+1. Install dependencies:
 ```bash
 npm install
 ```
@@ -36,5 +35,5 @@ The application will be available at `http://localhost:5173/`
 
 - **React** - UI library
 - **Vite** - Build tool and dev server
-- **GSAP** - Animation library
+- **GSAP (React integration)** - Animation library
 - **Tailwind CSS** - Utility-first CSS framework
