@@ -1,0 +1,10 @@
+# Development dependencies
+-r requirements.txt
+
+# Testing
+pytest==7.4.3
+pytest-django==4.7.0
+
+# Code quality
+black==23.12.1
+flake8==6.1.0
