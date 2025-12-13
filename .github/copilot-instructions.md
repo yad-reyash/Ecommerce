@@ -104,7 +104,8 @@ Currently no backend integration. Future considerations:
 - Search implementation (modal stub exists)
 
 ### 3D/Animation Libraries
-- GSAP installed for scroll animations
+- `@gsap/react` package installed (imports as `gsap` for scroll animations)
+- GSAP ScrollTrigger registered globally in App.jsx
 - Note: No Three.js/React Three Fiber despite 3D references in constants (ProductViewer 3D implementation pending)
 
 ## Common Gotchas
