@@ -18,8 +18,17 @@ trap cleanup SIGINT SIGTERM
 # Start backend
 echo "📦 Starting Django Backend on http://localhost:8000..."
 cd backend
-python3 manage.py runserver > /tmp/backend.log 2>&1 &
-BACKEND_PID=$!
+
+# Check if virtual environment exists and activate it
+if [ -d "venv" ]; then
+    source venv/bin/activate
+    python manage.py runserver > /tmp/backend.log 2>&1 &
+    BACKEND_PID=$!
+else
+    # Use python3 if no venv exists
+    python3 manage.py runserver > /tmp/backend.log 2>&1 &
+    BACKEND_PID=$!
+fi
 cd ..
 
 sleep 2

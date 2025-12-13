@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Perfomance() {
+function Performance() {
   return (
-    <div>Perfomance</div>
+    <div>Performance</div>
   )
 }
 
-export default Perfomance
+export default Performance
