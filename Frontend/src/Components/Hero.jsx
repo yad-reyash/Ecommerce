@@ -29,8 +29,6 @@ const Hero = () => {
         src="/videos/hero.mp4"
         style={{ width: "75%", height: "auto" }}
       />
-
-      <button>Click me</button>
     </section>
   );
 };

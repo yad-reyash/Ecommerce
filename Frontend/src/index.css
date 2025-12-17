@@ -129,7 +129,7 @@ body {
     }
 
     video {
-      @apply mx-auto lg:translate-y-5 2xl:translate-y-0;
+      @apply mx-auto lg:translate-y-0 2xl:translate-y-0;
     }
 
     button {

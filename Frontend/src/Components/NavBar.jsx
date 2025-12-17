@@ -1,6 +1,6 @@
 import {navLinks} from "../constants";
 
-const NavBar = () => {
+const NavBar = ({ onSearchClick }) => {
     return (
         <header>
             <nav>
@@ -15,7 +15,11 @@ const NavBar = () => {
                 </ul>
 
                 <div className="flex-center gap-3">
-                    <button>
+                    <button 
+                        onClick={onSearchClick}
+                        className="hover:scale-110 transition-transform"
+                        title="Search products"
+                    >
                         <img src="/search.svg" alt="Search" />
                     </button>
                     <button>
